@@ -1,4 +1,8 @@
 steps:
+- name: gcr.io/$PROJECT_ID/terraform
+  args:
+  - init
+  - -input=false
 
 - id: 'tf apply'
   name: 'hashicorp/terraform:1.0.0'
